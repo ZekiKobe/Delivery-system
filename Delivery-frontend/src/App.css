@@ -1,0 +1,33 @@
+/* App-specific styles */
+#root {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Basic component styles using Tailwind */
+.btn-primary {
+  background-color: #f97316;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #ea580c;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #f97316;
+  border: 1px solid #fed7aa;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #fff7ed;
+}

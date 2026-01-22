@@ -1,0 +1,149 @@
+.footer{
+    width: 100%;
+    margin-top: 90px;
+    background-color: #1f1e1e;
+}
+.footer-top{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top-left input{
+    width: 60%;
+    padding: 0.6rem;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+.footer-top-left button{
+    padding: 0.6rem;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: orange;
+    color: black;
+}
+.footer-top-right{
+    display: flex;
+    align-items: center;
+}
+.footer-top-right .social-media{
+    display: flex;
+    gap: 30px;
+}
+.footer-top-right .social-media li{
+    width: 30px;
+    height: 30px;
+    list-style-type: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid orange;
+    transition: .5s ease-in;
+}
+.footer-top-right .social-media li:hover{
+    background-color: orange;
+}
+.footer-middle{
+    width: 96%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+.hr{
+ height: 2px;
+  background-color: #333;
+  border: none;
+  width: 90%;
+  margin: 20px auto;
+}
+.footer-middle .footer-middle-left iframe{
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.footer-middle .footer-middle-middle{
+    display: flex;
+    flex-direction: column;
+}
+    .footer-middle-middle h2{
+       margin-left: 40px;
+       margin-bottom: 0;
+    }
+.footer-middle-middle .services li{
+list-style-type: none;
+text-align: start;
+display: flex;
+align-items: center;
+gap: 10px;
+color: gray;
+padding: 6px;
+text-decoration: underline;
+}
+.footer-middle-right{
+    display: flex;
+    flex-direction: column;
+    color: gray;
+}
+.footer-middle-right p{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+.footer-middle-right{
+    text-align: start;
+}
+.fa-circle{
+    color: orange;
+}
+.footer-bottom{
+    text-align: center;
+    padding-bottom: 30px;
+    color: gray;
+}
+
+@media (max-width:768px){
+    .footer-top{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .footer-top-left{
+        width: 90%;
+        margin: auto;
+    }
+    .footer-top-right{
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-top-right .social-media li{
+        width: 25px;
+        height: 25px;
+        gap: 10px;
+        margin: 0;
+    }
+    .footer-middle{
+        width: 100%;
+        grid-template-columns: 2fr;
+    }
+    .footer-middle-left{
+        width: 96%;
+        margin: auto;
+    }
+    .footer-middle .footer-middle-left iframe{
+        width: 100%;
+        margin: auto;
+    }
+    .footer-middle-right{
+        width: 90%;
+        margin-left: 40px;
+    }
+}

@@ -1,0 +1,28 @@
+.feature{
+    width: 100%;text-align: center;
+
+}
+.feature-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+   
+}
+.fetr{
+ box-shadow: 0px 4px 8px rgba(0,0,0,0.88);
+ padding: 15px;
+ padding-top: 50px;
+ border-radius: 5px;
+}
+
+@media(max-width:768px){
+    .feature-grid{
+        grid-template-columns: 1fr;
+    }
+    .fetr{
+        width: 90%;
+        margin: auto;
+    }
+}
