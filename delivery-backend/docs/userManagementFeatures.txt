@@ -1,0 +1,87 @@
+Enhanced User Management System Features
+=======================================
+
+1. Extended User Model
+----------------------
+- Added new fields: date_of_birth, gender, two_factor_enabled, two_factor_secret
+- Enhanced profile fields: delivery_person_profile, business_profile
+- Added referral system: referral_code, referred_by
+- Improved security tracking: failed_login_attempts, last_failed_login
+- Activity tracking: last_activity
+
+2. Authentication Enhancements
+------------------------------
+- Two-factor authentication support using TOTP (Time-based One-Time Password)
+- Enhanced registration with additional profile information
+- Improved login security with account lockout after failed attempts
+- Activity tracking during authentication
+
+3. Profile Management
+---------------------
+- Extended profile update with date of birth and gender
+- Advanced address management with default address support
+- Comprehensive preferences system for dietary restrictions, cuisine preferences, and notification settings
+- Avatar upload functionality
+
+4. Security Features
+--------------------
+- Two-factor authentication setup and management
+- Enhanced password change with current password verification
+- Phone number verification
+- Activity tracking and monitoring
+
+5. Admin Functions
+------------------
+- User search and filtering by role
+- Bulk user operations (update, delete)
+- User activation/deactivation
+- Detailed user statistics
+- Referral system management
+
+6. API Endpoints
+----------------
+Auth Routes (/api/auth):
+- POST /register - Enhanced registration
+- POST /login - Enhanced login with 2FA support
+- POST /2fa/setup - Initialize 2FA setup
+- POST /2fa/verify - Verify and activate 2FA
+- POST /2fa/disable - Disable 2FA
+
+User Routes (/api/users):
+- GET /profile - Get user profile
+- PUT /profile - Update user profile
+- POST /avatar - Upload avatar
+- PUT /change-password - Change password
+- GET /activity - Get user activity
+- POST /verify-phone - Verify phone number
+- POST /addresses - Add address
+- PUT /addresses/:addressId - Update address
+- DELETE /addresses/:addressId - Delete address
+- PUT /preferences - Update preferences
+- DELETE /account - Deactivate account
+
+Admin Routes (/api/admin):
+- GET /users - Get all users with pagination
+- GET /users/:id - Get user by ID
+- PUT /users/:id - Update user
+- POST /users/:id/deactivate - Deactivate user
+- POST /users/:id/activate - Activate user
+- DELETE /users/:id - Delete user
+- GET /statistics/users - Get user statistics
+- GET /users/:userId/referrals - Get referral statistics
+- GET /users/:userId/referred - Get referred users
+- PUT /users/bulk-update - Bulk update users
+- DELETE /users/bulk-delete - Bulk delete users
+
+7. Services
+-----------
+- UserService: Comprehensive service for user management operations
+- Enhanced validation rules for all new fields and operations
+
+8. Validation
+-------------
+- Extended validation for all new fields
+- Specialized validation for 2FA setup and phone verification
+- Enhanced profile and address validation
+
+This enhanced user management system provides a robust foundation for a modern delivery service with improved security, better user experience, and comprehensive administrative capabilities.
